@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" 
+    android:screenOrientation="portrait" >
+    
+    <Spinner
+        android:id="@+id/commandSpinner"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="10dp" />    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+        <EditText 
+            android:id="@+id/usernameInput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:inputType="text"
+            android:hint="username"
+            android:text=""
+            tools:context=".MainActivity" />
+            
+        <EditText 
+            android:id="@+id/passwordInput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:text=""
+            tools:context=".MainActivity" />   
+        
+    </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        
+        <EditText 
+            android:id="@+id/anodeInput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:text="580"
+            tools:context=".MainActivity" />
+            
+        <EditText 
+            android:id="@+id/cathodeInput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:text="300"
+            tools:context=".MainActivity" />
+        
+    </LinearLayout>
+        
+    <EditText 
+        android:id="@+id/startInput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:text="m28_580V"
+        tools:context=".MainActivity" />
+   
+    <ToggleButton 
+        android:id="@+id/activate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:textOn="activate"
+        android:textOff="activate"
+        android:checked="false"
+        tools:context=".MainActivity" />
+
+    <Button 
+        android:id="@+id/send"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="send"
+        android:clickable="false"
+        tools:context=".MainActivity" />
+    
+    <TextView 
+        android:id="@+id/message"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text=" no action yet " />
+    
+    <TextView 
+        android:id="@+id/recieved"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text=" no response yet " />
+    
+<!--        android:scrollbars = "vertical"
+        android:fillViewport="true"-->
+    
+</LinearLayout>
