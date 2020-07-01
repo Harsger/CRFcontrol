@@ -1,5 +1,3 @@
-bin/
-obj/
 src/com/CRFcontrol/R.java
 classes.dex
 mykey.keystore
